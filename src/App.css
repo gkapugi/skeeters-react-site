@@ -1,27 +1,68 @@
-.App {
-  text-align: center;
-  background-color: #282c34;
+body {
+  background-color: rgb(31, 240, 255);
+}
+
+.wrapper {
+  display: block;
   height: 100vh;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  min-height: 40vh;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
 }
 
-.Beer-list {
-  list-style-type: none;
-  color: white;
-  font-size: calc(10px + 2vmin);
-  padding: 1rem;
+.logo-wrapper {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+@media only screen and (max-width: 850px) {
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
+.accordian {
+  width: 100%;
+}
+
+.item {
+  background: rgb(200, 200, 200);
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(100, 100, 100);
+}
+
+.content {
+  color: rgb(70, 70, 70);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  padding: 5px 10px;
 }

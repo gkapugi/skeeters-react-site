@@ -1,4 +1,5 @@
-const beers = [
+
+export const beers = [
     {
         name: "A Better Hefer",
         style: "Cream Ale",
@@ -23,13 +24,13 @@ const beers = [
         packaged: "4/15/2021",
         brewedBy: "Tony Kapugi",
         description: "American amber with a Belgian yeast.",
-        about: ""
+        about: "n/a"
     },
     {
         name: "On Your Bike",
         style: "Special Bitter",
         tapID: 3,
-        abv: null,
+        abv: "n/a",
         ibu: 35,
         srm: 14.3,
         gravity: "",
@@ -45,20 +46,20 @@ const beers = [
         abv: 5.5,
         ibu: 65,
         srm: 18,
-        gravity: null,
+        gravity: "n/a",
         packaged: "11/21/2020",
         brewedBy: "Tony Kapugi",
-        description: "",
-        about: ""
+        description: "n/a",
+        about: "n/a"
     },
     {
         name: "Rye-zenheimer",
         style: "Specialty Bock",
         tapID: 5,
-        abv: null,
-        ibu: null,
-        srm: null,
-        gravity: null,
+        abv: "n/a",
+        ibu: "n/a",
+        srm: "n/a",
+        gravity: "n/a",
         packaged: "3/12/2021",
         brewedBy: "Tony Kapugi",
         description: "",
@@ -75,20 +76,20 @@ const beers = [
         packaged: "11/14/2020",
         brewedBy: "Tony Kapugi",
         description: "This dark wheat beer is a great beer to begin fall and ease into winter.",
-        about: ""
+        about: "n/a"
     },
     {
         name: "Barrel Aged Littlefoot",
         style: "Barleywine aged in oak",
         tapID: 7,
         abv: 10.2,
-        ibu: null,
-        srm: null,
+        ibu: "n/a",
+        srm: "n/a",
         gravity: "",
         packaged: "5/15/2021",
         brewedBy: "Sun Prairie Warthogs",
-        description: "",
-        about: ""
+        description: "n/a",
+        about: "n/a"
     },
     {
         name: "Rezenator",
@@ -101,7 +102,7 @@ const beers = [
         packaged: "9/18/2022",
         brewedBy: "Tony Kapugi",
         description: "Clean, crisp, malty with a little hop bitterness to balance the malt.  Easy drinking but full bodied beer.",
-        about: ""
+        about: "n/a"
     },
     {
         name: "Stay Golden, Pony Boy!",
@@ -127,24 +128,19 @@ const beers = [
         packaged: "6/12/2021",
         brewedBy: "Tony Kapugi",
         description: "Chocolate and roasted malty porter with hints of cherry and raisin.",
-        about: ""
+        about: "n/a"
     },
     {
         name: "Sparkling water",
+        style: "Sparkling water",
         tapID: 11,
         abv: 0,
+        ibu: 0,
         srm: 0,
+        gravity: "n/a",
+        packaged: "n/a",
+        brewedBy: "n/a",
+        description: "Carbinated water",
+        about: 'n/a'
     }
 ]
-
-const beerNames = [];
-for (let i = 0; i < beers.length; i++) {
-    let name = beers[i].name;
-    beerNames.push(name);
-}
-
-const beerNameList = beerNames.map((names) => 
-    <li className="List-Items">{names}</li>
-)
-
-export default beerNameList;
