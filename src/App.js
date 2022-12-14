@@ -27,14 +27,16 @@ function App() {
               <span>{selected === index ? '-' : '+'}</span>
             </div>
             <div className={selected === index ? "content show" : "content"}>
-              ABV: {item.abv}<br></br>
-              IBU: {item.ibu}<br></br>
-              SRM: {item.srm}<br></br>
-              Gravity: {item.gravity}<br></br>
-              Packaged On: {item.packaged}<br></br>
-              Brewed By: {item.brewedBy}<br></br>
-              Description: {item.description}<br></br>
-              About: {item.about}
+              <h2 id="description">{item.description}</h2>
+              <h3 id="stats">
+                ABV: {item.abv} IBU: {item.ibu} SRM: {item.srm}<br></br>
+                Gravity: {item.gravity}<br></br>
+                Packaged On: {item.packaged}<br></br>
+                Brewed By: {item.brewedBy}<br></br>
+              </h3>
+              <p id="about">
+                {item.about}
+              </p>
             </div>
           </div>
         ))}
