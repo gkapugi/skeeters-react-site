@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './Skeeters_Logo-transformed.png';
 import { useState } from 'react';
 import './App.css';
 import { beers } from './Beers.js';
+import Logo from './Logo';
 
 function App() {
   const [selected, setSelected] = useState(null)
@@ -17,9 +17,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <div className="logo-wrapper">
-        <img src={logo} alt="logo" className="logo"></img>
-      </div>
+      < Logo/>
       <div className="accordian">
         {beers.map((item, index) => (
           <div className="item" key={index}>
