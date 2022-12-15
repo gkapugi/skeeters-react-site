@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './Skeeters_Logo-transformed.png';
 import { useState } from 'react';
 import './App.css';
