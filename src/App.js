@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import { beers } from './Beers.js';
-import Logo from './Logo';
+import Logo from './Components/Logo';
 
 function App() {
   const [selected, setSelected] = useState(null)
